@@ -13,7 +13,7 @@
 
 nav{
     display:flex;
-    background-color: palegreen;
+    background-color: rgb(138, 209, 241);
     align-items: center;
     justify-content: space-between;
     padding: 16px;
@@ -34,12 +34,12 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color: #444;
+    color: rgb(78, 78, 78);
     font-size: 0.9em;
 }
 
 nav ul li a:hover{
-    color:#04AA6D
+    color:#0045c5
 }
 
 .menu-toggle{
