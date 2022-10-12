@@ -63,6 +63,7 @@ main{
     display: flex;
     justify-content:space-around;
     width: 100%;
+    padding-top: 0.25em;
 }
 main article{
     width: 64%;
@@ -73,17 +74,17 @@ main article{
 }
 main aside{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: column;
     width: 36%;
-    height: 360px;
+    height: 400px;
 }
 
 main aside img{
     width: 80px;
     height: 80px;
     border: solid sandybrown;
-    border-radius: 25%;
+    border-radius: 100%;
     text-align: center;
     background-color: aqua;
     align-self: center;
@@ -94,7 +95,6 @@ main aside h4{
     padding: 0.25em;
 }
 main aside p{
-    height: 70%;
     font-size: 0.8em;
     padding: 0.25em;
 }
