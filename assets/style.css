@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+}
+
+.jumbotron{
+    height: 200px;
+
+}
+
+nav{
+    display:flex;
+    background-color: palegreen;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    color: #444;;
+}
+
+nav .logo{
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 40%;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9em;
+}
+
+nav ul li a:hover{
+    color:#04AA6D
+    /* background-color: darkcyan; */
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 18px;
+    justify-content: space-between;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+main{
+    margin-top: 8px;
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+}
+main article{
+    width: 64%;
+    height: 360px;
+    margin-right: 5px;
+    padding: 0.25em;
+    font-size: 0.9em;
+}
+main aside{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 36%;
+    height: 360px;
+}
+
+main aside img{
+    width: 80px;
+    height: 80px;
+    border: solid sandybrown;
+    border-radius: 25%;
+    text-align: center;
+    background-color: aqua;
+    align-self: center;
+    padding :0.25em;
+    margin-bottom: 1em;
+}
+main aside h4{
+    padding: 0.25em;
+}
+main aside p{
+    height: 70%;
+    font-size: 0.8em;
+    padding: 0.25em;
+}
+
+/* Tablet responsive */
+@media screen and (max-width:768px){
+    nav ul{
+        width: 48%;
+    }
+    main{
+        display: block;
+    }
+    main article, main aside{
+        width: 100%;
+        /* height: auto; */
+        padding: 5px;
+        margin: auto;
+    }
+}
+
+/* Phone responsive */
+@media screen and (max-width:576px) {
+    nav ul{
+        display: none;
+    }
+    
+    .menu-toggle{
+        display: flex;
+    }
+
+    main{
+        display: block;
+    }
+    main article, main aside{
+        width: 100%;
+        /* height: auto; */
+        padding: 5px;
+        margin: auto;
+    }
+}
