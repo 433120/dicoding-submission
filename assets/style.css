@@ -65,7 +65,6 @@ main{
     margin-top: 8px;
     display: flex;
     justify-content:space-around;
-    width: 100%;
     padding-top: 0.25em;
 }
 main article{
@@ -110,8 +109,8 @@ main aside p{
     main article, main aside{
         width: 100%;
         /* height: auto; */
-        padding: 5px;
-        margin: auto;
+        padding: 5px 0;
+        margin: 0;
     }
     main aside img{
         height: 200px;
@@ -131,11 +130,12 @@ main aside p{
 
     main{
         display: block;
+        align-content: center;
     }
     main article, main aside{
         width: 100%;
         /* height: auto; */
-        padding: 5px;
-        margin: auto;
+        padding: 5px 0;
+        margin: 0;
     }
 }
