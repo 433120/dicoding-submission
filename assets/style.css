@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    /* overflow: hidden; */
+    overflow:inherit;
 }
 
 .jumbotron {
@@ -112,6 +112,10 @@ main aside p{
         /* height: auto; */
         padding: 5px;
         margin: auto;
+    }
+    main aside img{
+        height: 200px;
+        width: 200px;
     }
 }
 
